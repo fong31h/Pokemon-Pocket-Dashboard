@@ -136,7 +136,8 @@ ui.card(
         ui.card(
             ui.card_header("Weighted Score"),
             ui.output_data_frame("dominant"),
-            ui.card_footer("Weighted Score is based off of all top finishes weighted to account for increasing power level and decreasing player counts in the metagame.")
+            ui.card_footer("Weighted Score is based off of all top finishes weighted to account for increasing power level and decreasing player counts in the metagame."),
+            height="500px"
         ),
     col_widths=(9,3))),
     
@@ -349,21 +350,21 @@ def server(input, output, session):
     @render.ui
     def animated_scores():
         interpolated = make_interpolated_table(dropdown_df, ex_list2)
-        fig, ax = plt.subplots(figsize=(9,5),dpi=100)
+        fig, ax = plt.subplots(figsize=(9,4),dpi=100)
         fig.tight_layout()
         fig.subplots_adjust(left=0.14)
-        ax.tick_params(axis='y', labelsize=5)
-        ax.tick_params(axis='x', labelsize=5)
+        ax.tick_params(axis='y', labelsize=7)
+        ax.tick_params(axis='x', labelsize=7)
         def update(frame):
             ax.clear()
             top_10 = interpolated.nlargest(10, frame)
             colors = plt.cm.viridis(np.linspace(0.2,0.9,len(top_10)))
             bars = ax.barh(top_10['Pokémon'], top_10[frame], color=colors)
             ax.invert_yaxis()
-            ax.set_title("Top 10 Over Time", fontsize=6)
+            ax.set_title("Top 10 Over Time", fontsize=8)
             for spine in ["top","right","left"]:
                 ax.spines[spine].set_visible(False)
-            ax.set_xlabel("Weighted Score",fontsize=6)
+            ax.set_xlabel("Weighted Score",fontsize=8)
             ax.xaxis.grid(True, linestyle="--", alpha=0.4)
             ax.bar_label(bars, fmt="%.1f", padding=3,fontsize=5)
             return ax.patches
