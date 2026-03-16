@@ -1,0 +1,13 @@
+shinyswatch
+pathlib
+shiny
+re
+numpy
+matplotlib.pyplot
+matplotlib.animation
+plotly.express
+shinywidgets
+requests
+bs4
+pandas
+datetime
