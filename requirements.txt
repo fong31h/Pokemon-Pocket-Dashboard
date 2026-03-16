@@ -9,5 +9,4 @@ requests
 bs4
 pandas
 datetime
-json
 shared
