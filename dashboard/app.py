@@ -1,4 +1,12 @@
+import os
+import sys
+
+print("cwd:", os.getcwd())
+print("files:", os.listdir())
+print("sys.path:", sys.path)
+
 import shinyswatch
+
 
 from pathlib import Path
 
