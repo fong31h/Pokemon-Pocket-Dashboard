@@ -207,7 +207,8 @@ def server(input, output, session):
         if a is None:
             return None
         else:
-            line = f'{int(a['Placement'])} out of {int(a['Player_Total'])}'
+            line = f'{int(a["Placement"])} out of 
+{int(a['Player_Total'])}'
             return line
     @render.text
     def deck_best():
