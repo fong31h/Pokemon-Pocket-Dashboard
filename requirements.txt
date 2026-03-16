@@ -1,7 +1,6 @@
 shinyswatch
 pathlib
 shiny
-re
 numpy
 matplotlib.pyplot
 matplotlib.animation
