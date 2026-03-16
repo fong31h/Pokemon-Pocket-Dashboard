@@ -2,9 +2,8 @@ shinyswatch
 pathlib
 shiny
 numpy
-matplotlib.pyplot
-matplotlib.animation
-plotly.express
+matplotlib
+plotly
 shinywidgets
 requests
 bs4
