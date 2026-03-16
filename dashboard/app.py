@@ -232,7 +232,7 @@ def server(input, output, session):
     @render.text
     def placement_best():
         a,b = make_row()
-        line = f'{int(b['Placement'])} out of {int(b['Player_Total'])}'
+        line = f'{int(b["Placement"])} out of {int(b["Player_Total"])}'
         return line
     @render.text
     def expansion_best():
