@@ -47,7 +47,7 @@ ui.page_fluid(
         "select", 
         "Select ex card:", 
         choices=ex_list),
-        ui.output_image("pics"),width=285),
+        ui.output_image("pics"),width=285,open='open'),
 
         ui.card(
             
