@@ -1,10 +1,3 @@
-import os
-import sys
-
-print("cwd:", os.getcwd())
-print("files:", os.listdir())
-print("sys.path:", sys.path)
-
 import shinyswatch
 
 
@@ -353,20 +346,20 @@ def server(input, output, session):
         fig, ax = plt.subplots(figsize=(9,4),dpi=100)
         fig.tight_layout()
         fig.subplots_adjust(left=0.14)
-        ax.tick_params(axis='y', labelsize=7)
-        ax.tick_params(axis='x', labelsize=7)
+        ax.tick_params(axis='y', labelsize=8)
+        ax.tick_params(axis='x', labelsize=8)
         def update(frame):
             ax.clear()
             top_10 = interpolated.nlargest(10, frame)
             colors = plt.cm.viridis(np.linspace(0.2,0.9,len(top_10)))
             bars = ax.barh(top_10['Pokémon'], top_10[frame], color=colors)
             ax.invert_yaxis()
-            ax.set_title("Top 10 Over Time", fontsize=8)
+            ax.set_title("Top 10 Over Time", fontsize=10)
             for spine in ["top","right","left"]:
                 ax.spines[spine].set_visible(False)
-            ax.set_xlabel("Weighted Score",fontsize=8)
+            ax.set_xlabel("Weighted Score",fontsize=10)
             ax.xaxis.grid(True, linestyle="--", alpha=0.4)
-            ax.bar_label(bars, fmt="%.1f", padding=3,fontsize=5)
+            ax.bar_label(bars, fmt="%.1f", padding=3,fontsize=8)
             return ax.patches
         animate = FuncAnimation(fig, update, frames=len(interpolated.T)-2)
         plt.close(fig)
