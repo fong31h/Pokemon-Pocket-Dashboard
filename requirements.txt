@@ -9,4 +9,3 @@ requests
 bs4
 pandas
 datetime
-shared
