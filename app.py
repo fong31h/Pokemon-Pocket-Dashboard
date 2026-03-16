@@ -349,7 +349,7 @@ def server(input, output, session):
     @render.ui
     def animated_scores():
         interpolated = make_interpolated_table(dropdown_df, ex_list2)
-        fig, ax = plt.subplots(figsize=(8,6),dpi=100)
+        fig, ax = plt.subplots(figsize=(9,5),dpi=100)
         fig.tight_layout()
         fig.subplots_adjust(left=0.14)
         ax.tick_params(axis='y', labelsize=5)
