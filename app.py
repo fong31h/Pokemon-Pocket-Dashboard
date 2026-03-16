@@ -130,8 +130,7 @@ ui.card(
         ),
         ui.layout_columns(
         ui.card(
-            ui.card_header("Click play to watch the history of Pokémon 
-Pocket unfold."),
+            ui.card_header("Click play to watch the history of Pokémon Pocket unfold. Note: This will take a second to load."),
             ui.output_ui("animated_scores")
         ),
         ui.card(
