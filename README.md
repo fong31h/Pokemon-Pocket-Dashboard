@@ -1,5 +1,3 @@
-# Project 3
-
 # Pokemon Card Game Data Presentation
 
 My third project was a passion project. I webscraped, cleaned, analyzed, and visualized tournament data from the mobile game Pokémon Trading Card Game Pocket. I then built a dashboard in Python Shiny to present
