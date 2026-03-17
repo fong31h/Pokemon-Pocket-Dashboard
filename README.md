@@ -5,10 +5,11 @@ the competitive history of the first year of this game's life. Please see my das
 
 ## Key Takeaways
 
-* Game data like this is complicated, with endless edge cases and unexpected problems that have to be accounted for, scraping the data is not even half the battle
 * The key to good visualizations is not in choosing the fanciest chart, but in choosing meaningful data
 * Choosing meaningful data often involves time spent planning and thinking through a data problem - then using data wrangling skills to get the data into its desired form
 * Oftentimes, a simple table is just as effective as any graphic
+* Game data like this is complicated, with endless edge cases and unexpected problems that have to be accounted for, scraping the data is not even half the battle
+* Presentation matters - a color theme and clean visuals can go a long way
 
 ## Why This Matters
 
