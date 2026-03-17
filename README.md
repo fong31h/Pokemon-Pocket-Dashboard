@@ -1,7 +1,7 @@
 # Pokemon Card Game Data Presentation
 
 My third project was a passion project. I webscraped, cleaned, analyzed, and visualized tournament data from the mobile game Pokémon Trading Card Game Pocket. I then built a dashboard in Python Shiny to present
-the competitive history of the first year of this game's life. Please see my dashboard [here](https://019cf8ca-d476-452b-cd6c-e8061766ff0e.share.connect.posit.cloud)
+the competitive history of the first year of this game's life. Please see my dashboard [here](https://019cf8ca-d476-452b-cd6c-e8061766ff0e.share.connect.posit.cloud).
 
 ## Key Takeaways
 
