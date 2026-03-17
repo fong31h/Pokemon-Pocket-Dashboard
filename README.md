@@ -5,14 +5,14 @@
 My third project was a passion project. I webscraped, cleaned, analyzed, and visualized tournament data from the mobile game Pokémon Trading Card Game Pocket. I then built a dashboard in Python Shiny to present
 the competitive history of the first year of this game's life. Please see my dashboard [here](https://019cf8ca-d476-452b-cd6c-e8061766ff0e.share.connect.posit.cloud)
 
-# Key Takeaways
+## Key Takeaways
 
 * Game data like this is complicated, with endless edge cases and unexpected problems that have to be accounted for, scraping the data is not even half the battle
 * The key to good visualizations is not in choosing the fanciest chart, but in choosing meaningful data
 * Choosing meaningful data often involves time spent planning and thinking through a data problem - then using data wrangling skills to get the data into its desired form
 * Oftentimes, a simple table is just as effective as any graphic
 
-# Why This Matters
+## Why This Matters
 
 First, this project shows my ability to tell a story with data. With this dashboard I tell a complete story of the first year of Pokémon TCG Pocket. 
 Tournament results, changes in the metagame overtime, nuances in deckbuilding, and overall power rankings are all represented. Many people responded to my storytelling ability when I 
